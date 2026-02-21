@@ -1,250 +1,516 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- EN title shown when lang=en; JA title shown when lang=ja -->
-  <title>Takuma Miwa – Profile</title>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Takuma Miwa / 三輪 拓真</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- ==================== HEADER ==================== -->
-  <header>
-    <div class="lang-switcher">
-      <button id="lang-toggle" aria-label="Switch to Japanese">日本語</button>
+<header>
+  <div class="wrap topbar">
+    <div class="brand">Takuma Miwa / 三輪 拓真</div>
+    <nav class="nav" aria-label="Primary">
+      <a href="#career" data-i18n="nav_career" class="active">経歴</a>
+      <a href="#education" data-i18n="nav_education">学歴</a>
+      <a href="#skills" data-i18n="nav_skills">技術スキル</a>
+      <a href="#experience" data-i18n="nav_experience">職歴</a>
+      <a href="#research" data-i18n="nav_research">研究</a>
+      <a href="#awards" data-i18n="nav_awards">受賞</a>
+    </nav>
+    <div class="lang" aria-label="Language switch">
+      <button class="pill active" id="btn-ja" type="button">ja</button>
+      <button class="pill" id="btn-en" type="button">en</button>
     </div>
+  </div>
+</header>
 
-    <h1>Miwa Takuma <span class="ja">（三輪 拓馬）</span></h1>
-    <p class="subtitle">
-      <span class="en">Researcher / Engineer</span>
-      <span class="ja">研究者 / エンジニア</span>
-    </p>
-    <p class="email">
-      <a href="mailto:takuma.miwa@example.com">takuma.miwa@example.com</a>
-    </p>
-  </header>
 
-  <!-- ==================== NAVIGATION ==================== -->
-  <nav aria-label="Page sections">
-    <a href="#affiliation">
-      <span class="en">Affiliation</span>
-      <span class="ja">所属</span>
-    </a>
-    <a href="#academic">
-      <span class="en">Academic Background</span>
-      <span class="ja">学歴</span>
-    </a>
-    <a href="#internship">
-      <span class="en">Internship</span>
-      <span class="ja">インターンシップ</span>
-    </a>
-    <a href="#awards">
-      <span class="en">Awards</span>
-      <span class="ja">受賞</span>
-    </a>
-  </nav>
 
-  <!-- ==================== MAIN CONTENT ==================== -->
-  <main>
-
-    <!-- ---- Affiliation ---- -->
-    <section id="affiliation">
-      <h2>
-        <span class="en">Affiliation</span>
-        <span class="ja">所属</span>
-      </h2>
-
-      <div class="affiliation-item">
-        <span class="affiliation-icon">🏛️</span>
-        <div class="affiliation-details">
-          <h3>
-            <span class="en">Example University, Graduate School of Information Science and Technology</span>
-            <span class="ja">例大学 情報理工学系研究科</span>
-          </h3>
-          <p>
-            <span class="en">Ph.D. Candidate, Department of Computer Science</span>
-            <span class="ja">情報科学専攻 博士課程</span>
-          </p>
+<main>
+  <div class="wrap">
+    <section class="hero" id="career">
+      <div>
+        <div class="ja">
+          <h1>三輪 拓真</h1>
+          <p class="sub">奈良先端科学技術大学院大学 博士後期課程</p>
+          <p class="sub">専門：量子機械学習，自然言語処理</p>
         </div>
-      </div>
+        <div class="en hide">
+          <h1>Takuma Miwa</h1>
+          <p class="sub">Nara Institute of Science and Technology (NAIST)</p>
+          <p class="sub">Ph.D. Student in Quantum Machine Learning</p>
+        </div>
 
-      <div class="affiliation-item">
-        <span class="affiliation-icon">🔬</span>
-        <div class="affiliation-details">
-          <h3>
-            <span class="en">Natural Language Processing Lab</span>
-            <span class="ja">自然言語処理研究室</span>
-          </h3>
-          <p>
-            <span class="en">Supervised by Prof. Jane Doe</span>
-            <span class="ja">指導教員：Jane Doe 教授</span>
-          </p>
+        <div class="contact">
+          <div class="ja">
+            <div class="contact-item"><strong>所在地:</strong> 生駒市、奈良県</div>
+            <div class="contact-item"><strong>メール:</strong> <a href="mailto:takuma.code@gmail.com">takuma.code@gmail.com</a></div>
+            <div class="contact-item">
+              <strong>リンク:</strong> 
+              <a href="https://github.com/TakumaMiwa" target="_blank">GitHub</a> | 
+              <a href="https://www.linkedin.com/in/takuma-miwa-195295208/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+          <div class="en hide">
+            <div class="contact-item"><strong>Location:</strong> Ikoma, Nara</div>
+            <div class="contact-item"><strong>Email:</strong> <a href="mailto:takuma.code@gmail.com">takuma.code@gmail.com</a></div>
+            <div class="contact-item">
+              <strong>Links:</strong> 
+              <a href="https://github.com/TakumaMiwa" target="_blank">GitHub</a> | 
+              <a href="https://www.linkedin.com/in/takuma-miwa-195295208/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ---- Academic Background ---- -->
-    <section id="academic">
-      <h2>
-        <span class="en">Academic Background</span>
-        <span class="ja">学歴</span>
-      </h2>
-
-      <ul class="timeline">
-        <li>
-          <span class="timeline-year">2023 – Present</span>
-          <div class="timeline-title">
-            <span class="en">Ph.D. in Computer Science, Example University</span>
-            <span class="ja">例大学 情報科学専攻 博士課程 在学中</span>
-          </div>
-          <div class="timeline-sub">
-            <span class="en">Research: Natural Language Processing, Large Language Models</span>
-            <span class="ja">研究分野：自然言語処理、大規模言語モデル</span>
-          </div>
-        </li>
-        <li>
-          <span class="timeline-year">2021 – 2023</span>
-          <div class="timeline-title">
-            <span class="en">M.S. in Computer Science, Example University</span>
-            <span class="ja">例大学 情報科学専攻 修士課程 修了</span>
-          </div>
-          <div class="timeline-sub">
-            <span class="en">Thesis: Neural Approaches to Machine Translation</span>
-            <span class="ja">修士論文：機械翻訳へのニューラルアプローチ</span>
-          </div>
-        </li>
-        <li>
-          <span class="timeline-year">2017 – 2021</span>
-          <div class="timeline-title">
-            <span class="en">B.E. in Information Engineering, Sample University</span>
-            <span class="ja">サンプル大学 情報工学科 卒業</span>
-          </div>
-          <div class="timeline-sub">
-            <span class="en">Graduated with honors</span>
-            <span class="ja">優秀賞受賞</span>
-          </div>
-        </li>
-      </ul>
+    <section id="education">
+      <div class="ja">
+        <h2>学歴</h2>
+        <ul class="timeline">
+          <li>
+            <span class="timeline-year">2028年3月予定</span>
+            <div class="timeline-title">奈良先端科学技術大学院大学</div>
+            <div class="timeline-sub">博士（工学） - 先端科学技術専攻</div>
+          </li>
+          <li>
+            <span class="timeline-year">2025年3月</span>
+            <div class="timeline-title">奈良先端科学技術大学院大学</div>
+            <div class="timeline-sub">修士（工学） - 先端科学技術専攻 | GPA: 3.1/3.50</div>
+          </li>
+          <li>
+            <span class="timeline-year">2023年3月</span>
+            <div class="timeline-title">岡山大学</div>
+            <div class="timeline-sub">学士（工学） - 情報技術専攻 | GPA: 3.76/4.50（優等学生）</div>
+          </li>
+        </ul>
+      </div>
+      <div class="en hide">
+        <h2>Education</h2>
+        <ul class="timeline">
+          <li>
+            <span class="timeline-year">Expected Mar 2028</span>
+            <div class="timeline-title">Nara Institute of Science and Technology (NAIST), Nara, Japan</div>
+            <div class="timeline-sub">Ph.D. in Engineering (Department of Science and Technology)</div>
+          </li>
+          <li>
+            <span class="timeline-year">Mar 2025</span>
+            <div class="timeline-title">Nara Institute of Science and Technology (NAIST), Nara, Japan</div>
+            <div class="timeline-sub">M.S. in Engineering (Department of Science and Technology) | GPA: 3.1/3.50</div>
+          </li>
+          <li>
+            <span class="timeline-year">Mar 2023</span>
+            <div class="timeline-title">Okayama University, Okayama, Japan</div>
+            <div class="timeline-sub">B.S. in Engineering (Information Technology) | GPA: 3.76/4.50 (Honor Roll Student)</div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- ---- Internship ---- -->
-    <section id="internship">
-      <h2>
-        <span class="en">Internship</span>
-        <span class="ja">インターンシップ</span>
-      </h2>
-
-      <div class="internship-list">
-        <div class="internship-card">
-          <div class="internship-card-header">
-            <h3>
-              <span class="en">Example Tech Corp.</span>
-              <span class="ja">サンプルテック株式会社</span>
-            </h3>
-            <span class="internship-period">
-              <span class="en">Jul. 2023 – Sep. 2023</span>
-              <span class="ja">2023年7月 – 2023年9月</span>
-            </span>
+    <section id="skills">
+      <div class="ja">
+        <h2>技術スキル</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <div class="skill-category">
+              <h4>量子技術</h4>
+              <p>Qiskit, PennyLane, 量子ニューラルネットワーク (QNN), 量子畳み込みニューラルネットワーク (QCNN)</p>
+            </div>
           </div>
-          <div class="internship-role">
-            <span class="en">Research Intern – NLP Team</span>
-            <span class="ja">リサーチインターン – NLPチーム</span>
+          <div class="card">
+            <div class="skill-category">
+              <h4>AI・機械学習</h4>
+              <p>PyTorch, TensorFlow, 大規模言語モデル, グラフニューラルネットワーク, 自然言語処理, 連合学習</p>
+            </div>
           </div>
-          <p class="internship-desc">
-            <span class="en">Developed a retrieval-augmented generation (RAG) pipeline and improved retrieval accuracy by 12% on internal benchmarks.</span>
-            <span class="ja">検索拡張生成（RAG）パイプラインの開発に従事し、社内ベンチマークで検索精度を12%改善した。</span>
-          </p>
+          <div class="card">
+            <div class="skill-category">
+              <h4>開発技術</h4>
+              <p>Python, C, Docker, Git, Linux</p>
+            </div>
+          </div>
         </div>
-
-        <div class="internship-card">
-          <div class="internship-card-header">
-            <h3>
-              <span class="en">Demo Labs Inc.</span>
-              <span class="ja">デモラボス株式会社</span>
-            </h3>
-            <span class="internship-period">
-              <span class="en">Aug. 2022 – Sep. 2022</span>
-              <span class="ja">2022年8月 – 2022年9月</span>
-            </span>
+      </div>
+      <div class="en hide">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="card">
+            <div class="skill-category">
+              <h4>Quantum</h4>
+              <p>Qiskit, PennyLane, Quantum Neural Networks (QNN), Quantum Convolutional Neural Networks (QCNN)</p>
+            </div>
           </div>
-          <div class="internship-role">
-            <span class="en">Software Engineering Intern</span>
-            <span class="ja">ソフトウェアエンジニアリングインターン</span>
+          <div class="card">
+            <div class="skill-category">
+              <h4>AI/ML</h4>
+              <p>PyTorch, TensorFlow, LLMs, Graph Neural Networks, NLP, Federated Learning</p>
+            </div>
           </div>
-          <p class="internship-desc">
-            <span class="en">Built a real-time document summarization API using transformer-based models, deployed on cloud infrastructure.</span>
-            <span class="ja">トランスフォーマーベースのモデルを使ったリアルタイム文書要約APIを構築し、クラウド基盤へデプロイした。</span>
-          </p>
+          <div class="card">
+            <div class="skill-category">
+              <h4>Dev</h4>
+              <p>Python, C, Docker, Git, Linux</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ---- Awards ---- -->
+    <section id="experience">
+      <div class="ja">
+        <h2>職歴・インターンシップ</h2>
+        <div class="experience-list">
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>NexaScience</h4>
+              <span class="experience-period">2025年4月 – 現在</span>
+            </div>
+            <div class="experience-role">研究開発エンジニア インターン</div>
+            <ul class="experience-desc">
+              <li>量子機械学習を用いたロボット姿勢制御の研究を実施（NEDO量子チャレンジ採択）</li>
+              <li>テックスタートアップのMVP開発をリード、先行技術調査と実装を担当</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>株式会社PKSHA Technology</h4>
+              <span class="experience-period">2024年2月 – 2024年3月</span>
+            </div>
+            <div class="experience-role">アルゴリズムエンジニア インターン</div>
+            <ul class="experience-desc">
+              <li>ログからFAQ生成の精度をアルゴリズム最適化とデータ前処理により約60%向上</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>FastLabel</h4>
+              <span class="experience-period">2024年1月 – 2024年2月</span>
+            </div>
+            <div class="experience-role">研究インターン</div>
+            <ul class="experience-desc">
+              <li>大規模言語モデルの事前学習に貢献、データ前処理からモデル実装までのパイプライン管理</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>理化学研究所</h4>
+              <span class="experience-period">2023年8月 – 2023年9月</span>
+            </div>
+            <div class="experience-role">研究インターン</div>
+            <ul class="experience-desc">
+              <li>量子Transformer（量子アテンション・QNN）を用いたテキスト生成モデルの開発</li>
+              <li>量子誤差逆伝播と損失関数に関する文献調査を実施</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>クウジット株式会社</h4>
+              <span class="experience-period">2021年2月 – 2023年3月</span>
+            </div>
+            <div class="experience-role">ソフトウェアエンジニア インターン</div>
+            <ul class="experience-desc">
+              <li>GiNZAを使用したPythonライブラリを構築し、特定ドメインの音声認識精度を向上</li>
+              <li>形態素解析を用いてソーシャルメディアデータを分析し、ユーザートレンドを抽出</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="en hide">
+        <h2>Professional Experience</h2>
+        <div class="experience-list">
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>NexaScience</h4>
+              <span class="experience-period">Apr 2025 – Present</span>
+            </div>
+            <div class="experience-role">Research & Engineer Intern</div>
+            <ul class="experience-desc">
+              <li>Researching robot posture control using Quantum Machine Learning; accepted for the NEDO Quantum Challenge</li>
+              <li>Developing an MVP for a tech startup, leading prior art research and implementation</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>PKSHA Technology</h4>
+              <span class="experience-period">Feb 2024 – Mar 2024</span>
+            </div>
+            <div class="experience-role">Algorithm Engineer Intern</div>
+            <ul class="experience-desc">
+              <li>Improved accuracy of generating FAQs from logs by approx. 60% via algorithm optimization and data preprocessing</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>FastLabel</h4>
+              <span class="experience-period">Jan 2024 – Feb 2024</span>
+            </div>
+            <div class="experience-role">Research Intern</div>
+            <ul class="experience-desc">
+              <li>Contributed to LLM pre-training, managing the pipeline from data preprocessing to model implementation</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>RIKEN</h4>
+              <span class="experience-period">Aug 2023 – Sep 2023</span>
+            </div>
+            <div class="experience-role">Research Intern</div>
+            <ul class="experience-desc">
+              <li>Developed a text generation model using Quantum Transformers (Quantum Attention & QNN)</li>
+              <li>Conducted literature reviews on quantum backward propagation and loss functions</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-card-header">
+              <h4>Koozyt, Inc.</h4>
+              <span class="experience-period">Feb 2021 – Mar 2023</span>
+            </div>
+            <div class="experience-role">Software Engineer Intern</div>
+            <ul class="experience-desc">
+              <li>Built a Python library using GiNZA to improve voice recognition accuracy for specific domains</li>
+              <li>Analyzed social media data using morphological analysis to extract user trends</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="ja">
+        <h2>主要研究プロジェクト</h2>
+        <div class="research-list">
+          <div class="research-card">
+            <h4>効率的なQCNN <span class="research-status">(QCNC 2025採択)</span></h4>
+            <p>QCNNにおいてPyTorch/PennyLaneを用いた新しいチャネル計算アルゴリズムを提案し、精度を保ちながらパラメータ数を最大1/7に削減</p>
+          </div>
+
+          <div class="research-card">
+            <h4>量子エンコーダモデル <span class="research-status">(進行中)</span></h4>
+            <p>Qiskit/PyTorchを用いて量子並列性による複数仮説処理が可能なエンコーダを実装</p>
+          </div>
+
+          <div class="research-card">
+            <h4>連合学習を用いたグラフニューラルネットワーク <span class="research-status">(GitHub)</span></h4>
+            <p>GNNと連合学習を組み合わせ、ベースラインよりも8%の精度向上を達成</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 32px;">研究発表</h3>
+        
+        <h4>査読付国際会議論文</h4>
+        <ul>
+          <li>
+            Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino:
+            "Efficient Channel Generation for QCNN based on Multi-Pauli Matrices",
+            International Conference on Quantum Communications, Networking, and Computing (QCNC 2025),
+            Nara, March 2025.
+          </li>
+        </ul>
+
+        <h4>その他国際会議等</h4>
+        <ul>
+          <li>
+            Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino:
+            "Multi-Pauli Observation for Efficient Channel Generation of Quantum Convolutional Neural Networks",
+            28th Quantum Information Processing Conference (QIP 2025 LBR),
+            Raleigh, February 2025.
+          </li>
+        </ul>
+
+        <h4>国内会議</h4>
+        <ul>
+          <li>内山大希，三輪拓真，吉野幸⼀郎, "プロアクティブ音声対話の実現に向けた聞き手笑いの先読み" , 言語処理学会第32回年次大会(NLP2026), 2026年3月．</li>
+          <li>三輪拓真，小田悠介，大中緋慧，河野誠也，吉野幸⼀郎, "量子カスケードモデルを用いた効率的な音声対話状態追跡", 第16回対話システムシンポジウム (第105回SLUD研究会), 2025年11月．</li>
+          <li>内山大希, 三輪拓真, 吉野幸⼀郎，"特許のドメイン知識を活用した対話的特許情報検索"，NLP若手の回第20回シンポジウム(YANS2025)，2025年8月．</li>
+          <li>三輪拓真，小田悠介，河野誠也，吉野幸⼀郎，"音声対話状態追跡タスクにおける量子計算の適用"，NLP若手の回第20回シンポジウム(YANS2025)，東京，2025年8月．</li>
+          <li>三輪拓真，小田悠介，河野誠也，吉野幸一郎，"量子計算を用いたダイレクトモデル"，言語処理学会第31回年次大会（NLP2025），長崎，2025年3月．</li>
+          <li>三輪拓真，小田悠介，河野誠也，吉野幸一郎，"QCNNにおける効率的なチャネル計算アルゴリズム"，第13回量子ソフトウェア研究発表会（IPSJ2024），東京，2024年10月．</li>
+          <li>三輪拓真，河野誠也，吉野幸一郎，"量子計算を用いた文字言語モデル"，言語処理学会第30回年次大会（NLP2024），東京，2024年3月．</li>
+        </ul>
+      </div>
+
+      <div class="en hide">
+        <h2>Key Research Projects</h2>
+        <div class="research-list">
+          <div class="research-card">
+            <h4>Efficient Quantum CNN <span class="research-status">(Accepted for QCNC 2025)</span></h4>
+            <p>Proposed a novel channel computation algorithm using PyTorch/PennyLane, reducing parameters by ~1/7 while maintaining accuracy</p>
+          </div>
+
+          <div class="research-card">
+            <h4>Quantum Encoder Model <span class="research-status">(In Progress)</span></h4>
+            <p>Implementing an encoder handling multiple hypotheses via quantum parallelism using Qiskit/PyTorch</p>
+          </div>
+
+          <div class="research-card">
+            <h4>Graph Neural Network with Federated Learning <span class="research-status">(GitHub)</span></h4>
+            <p>Combined GNNs with Federated Learning, achieving an 8% accuracy improvement over baselines</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 32px;">Publications</h3>
+        
+        <h4>Peer-reviewed International Conference</h4>
+        <ul>
+          <li>
+            Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino:
+            "Efficient Channel Generation for QCNN based on Multi-Pauli Matrices",
+            International Conference on Quantum Communications, Networking, and Computing (QCNC 2025),
+            Nara, Mar 2025.
+          </li>
+        </ul>
+
+        <h4>Other International Venues</h4>
+        <ul>
+          <li>
+            Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino:
+            "Multi-Pauli Observation for Efficient Channel Generation of Quantum Convolutional Neural Networks",
+            28th Quantum Information Processing Conference (QIP 2025 LBR),
+            Raleigh, Feb 2025.
+          </li>
+        </ul>
+
+        <h4>Domestic Conferences (Japan)</h4>
+        <ul>
+          <li>Daiki Uchiyama, Takuma Miwa, Koichiro Yoshino, "Anticipating Listener Laughter for Proactive Spoken Dialogue", 32nd Annual Conference of the Association for Natural Language Processing (NLP 2026), Mar 2026. </li>
+          <li>Takuma Miwa, Yusuke Oda, Akie Onaka, Seiya Kawano, Koichiro Yoshino, "Efficient Speech Dialogue State Tracking Based on Quantum Machine Learning", 16th Dialogue System Symposium (105th SLUD Workshop), Nov 2025. </li>
+          <li>Daiki Uchiyama, Takuma Miwa, Koichiro Yoshino, "Interactive Patent Information Retrieval utilizing Domain Knowledge of Patents", 20th Young Researcher's Workshop on Speech and Language Processing (YANS 2025), Aug 2025. </li>
+          <li>Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino, "Application of Quantum Computing to Spoken Dialogue State Tracking Tasks", 20th Young Researcher's Workshop on Speech and Language Processing (YANS 2025), Tokyo, Aug 2025. </li>
+          <li>Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino, "Direct Models with Quantum Computation", 31st Annual Conference of the Association for Natural Language Processing (NLP 2025), Nagasaki, Mar 2025. </li>
+          <li>Takuma Miwa, Yusuke Oda, Seiya Kawano, Koichiro Yoshino, "Efficient Channel Computation Algorithm in QCNN", 13th Quantum Software Workshop (IPSJ 2024), Tokyo, Oct 2024. </li>
+          <li>Takuma Miwa, Seiya Kawano, Koichiro Yoshino, "Character-level Language Models with Quantum Computation", 30th Annual Conference of the Association for Natural Language Processing (NLP 2024), Tokyo, Mar 2024. </li>
+        </ul>
+      </div>
+    </section>
+
     <section id="awards">
-      <h2>
-        <span class="en">Awards</span>
-        <span class="ja">受賞</span>
-      </h2>
+      <div class="ja">
+        <h2>受賞・リーダーシップ</h2>
+        <ul class="awards-list">
+          <li>
+            <span class="award-icon">🏆</span>
+            <div class="award-details">
+              <div class="award-title">若手研究者賞</div>
+              <div class="award-meta">第16回対話システムシンポジウム</div>
+            </div>
+          </li>
+          <li>
+            <span class="award-icon">🥈</span>
+            <div class="award-details">
+              <div class="award-title">Hult Prize</div>
+              <div class="award-meta">チームリーダーとして大学予選で準グランプリを受賞</div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="awards-list">
-        <li>
-          <span class="award-icon">🏆</span>
-          <div class="award-details">
-            <div class="award-title">
-              <span class="en">Best Paper Award – NLP Conference 2023</span>
-              <span class="ja">NLP Conference 2023 最優秀論文賞</span>
+      <div class="en hide">
+        <h2>Leadership & Awards</h2>
+        <ul class="awards-list">
+          <li>
+            <span class="award-icon">🏆</span>
+            <div class="award-details">
+              <div class="award-title">Young Investigator Award</div>
+              <div class="award-meta">16th Dialogue System Symposium</div>
             </div>
-            <div class="award-meta">
-              <span class="en">For the paper "Efficient Pretraining of Large Language Models"</span>
-              <span class="ja">論文「大規模言語モデルの効率的な事前学習」に対して</span>
+          </li>
+          <li>
+            <span class="award-icon">🥈</span>
+            <div class="award-details">
+              <div class="award-title">Hult Prize</div>
+              <div class="award-meta">Team Leader, won 2nd Prize at university preliminary</div>
             </div>
-          </div>
-        </li>
-        <li>
-          <span class="award-icon">🥇</span>
-          <div class="award-details">
-            <div class="award-title">
-              <span class="en">Dean's Award for Academic Excellence, Example University (2023)</span>
-              <span class="ja">例大学 学業優秀賞（2023年）</span>
-            </div>
-            <div class="award-meta">
-              <span class="en">Awarded to top 5% of graduate students</span>
-              <span class="ja">大学院生上位5%に贈られる賞</span>
-            </div>
-          </div>
-        </li>
-        <li>
-          <span class="award-icon">🎖️</span>
-          <div class="award-details">
-            <div class="award-title">
-              <span class="en">Scholarship for Advanced Research, Japan Science Foundation (2022)</span>
-              <span class="ja">日本科学財団 先端研究奨学金（2022年）</span>
-            </div>
-            <div class="award-meta">
-              <span class="en">Competitive scholarship for doctoral students in science and engineering</span>
-              <span class="ja">理工系博士課程学生向け競争的奨学金</span>
-            </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </section>
+  </div>
+</main>
 
-  </main>
+<footer>
+  <div class="wrap">
+    <div class="social">
+      <span>© <span id="year"></span> Takuma Miwa</span>
+      <span class="small">|</span>
+      <a href="https://github.com/TakumaMiwa" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/takuma-miwa-195295208/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer>
-    <p>
-      <span class="en">&copy; 2024 Takuma Miwa. All rights reserved.</span>
-      <span class="ja">&copy; 2024 三輪 拓馬. All rights reserved.</span>
-    </p>
-  </footer>
+<script>
+  const btnJa = document.getElementById('btn-ja');
+  const btnEn = document.getElementById('btn-en');
+  
+  const setLang = (lang) => {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.ja').forEach(el => el.classList.toggle('hide', lang !== 'ja'));
+    document.querySelectorAll('.en').forEach(el => el.classList.toggle('hide', lang !== 'en'));
+    btnJa.classList.toggle('active', lang === 'ja');
+    btnEn.classList.toggle('active', lang === 'en');
 
-  <script src="script.js"></script>
+    // Update navigation labels
+    const labels = {
+      ja: {
+        nav_career: '経歴', 
+        nav_education: '学歴', 
+        nav_skills: '技術スキル',
+        nav_experience: '職歴', 
+        nav_research: '研究', 
+        nav_awards: '受賞'
+      },
+      en: {
+        nav_career: 'Career', 
+        nav_education: 'Education', 
+        nav_skills: 'Skills',
+        nav_experience: 'Experience', 
+        nav_research: 'Research', 
+        nav_awards: 'Awards'
+      }
+    };
+    
+    document.querySelectorAll('[data-i18n]').forEach(a => {
+      const key = a.getAttribute('data-i18n');
+      a.textContent = labels[lang][key] || a.textContent;
+    });
+  };
+
+  btnJa.addEventListener('click', () => setLang('ja'));
+  btnEn.addEventListener('click', () => setLang('en'));
+
+  // Highlight active nav on scroll
+  const navLinks = Array.from(document.querySelectorAll('.nav a'));
+  const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  
+  const onScroll = () => {
+    const y = window.scrollY + 120;
+    let idx = 0;
+    for (let i = 0; i < sections.length; i++) {
+      if (sections[i].offsetTop <= y) idx = i;
+    }
+    navLinks.forEach((a, i) => a.classList.toggle('active', i === idx));
+  };
+  
+  document.addEventListener('scroll', onScroll, {passive: true});
+  onScroll();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
+  // Initialize to Japanese
+  setLang('ja');
+</script>
 </body>
 </html>
