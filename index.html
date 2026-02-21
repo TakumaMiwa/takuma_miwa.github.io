@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EN title shown when lang=en; JA title shown when lang=ja -->
+  <title>Takuma Miwa – Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header>
+    <div class="lang-switcher">
+      <button id="lang-toggle" aria-label="Switch to Japanese">日本語</button>
+    </div>
+
+    <h1>Miwa Takuma <span class="ja">（三輪 拓馬）</span></h1>
+    <p class="subtitle">
+      <span class="en">Researcher / Engineer</span>
+      <span class="ja">研究者 / エンジニア</span>
+    </p>
+    <p class="email">
+      <a href="mailto:takuma.miwa@example.com">takuma.miwa@example.com</a>
+    </p>
+  </header>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav aria-label="Page sections">
+    <a href="#affiliation">
+      <span class="en">Affiliation</span>
+      <span class="ja">所属</span>
+    </a>
+    <a href="#academic">
+      <span class="en">Academic Background</span>
+      <span class="ja">学歴</span>
+    </a>
+    <a href="#internship">
+      <span class="en">Internship</span>
+      <span class="ja">インターンシップ</span>
+    </a>
+    <a href="#awards">
+      <span class="en">Awards</span>
+      <span class="ja">受賞</span>
+    </a>
+  </nav>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main>
+
+    <!-- ---- Affiliation ---- -->
+    <section id="affiliation">
+      <h2>
+        <span class="en">Affiliation</span>
+        <span class="ja">所属</span>
+      </h2>
+
+      <div class="affiliation-item">
+        <span class="affiliation-icon">🏛️</span>
+        <div class="affiliation-details">
+          <h3>
+            <span class="en">Example University, Graduate School of Information Science and Technology</span>
+            <span class="ja">例大学 情報理工学系研究科</span>
+          </h3>
+          <p>
+            <span class="en">Ph.D. Candidate, Department of Computer Science</span>
+            <span class="ja">情報科学専攻 博士課程</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="affiliation-item">
+        <span class="affiliation-icon">🔬</span>
+        <div class="affiliation-details">
+          <h3>
+            <span class="en">Natural Language Processing Lab</span>
+            <span class="ja">自然言語処理研究室</span>
+          </h3>
+          <p>
+            <span class="en">Supervised by Prof. Jane Doe</span>
+            <span class="ja">指導教員：Jane Doe 教授</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Academic Background ---- -->
+    <section id="academic">
+      <h2>
+        <span class="en">Academic Background</span>
+        <span class="ja">学歴</span>
+      </h2>
+
+      <ul class="timeline">
+        <li>
+          <span class="timeline-year">2023 – Present</span>
+          <div class="timeline-title">
+            <span class="en">Ph.D. in Computer Science, Example University</span>
+            <span class="ja">例大学 情報科学専攻 博士課程 在学中</span>
+          </div>
+          <div class="timeline-sub">
+            <span class="en">Research: Natural Language Processing, Large Language Models</span>
+            <span class="ja">研究分野：自然言語処理、大規模言語モデル</span>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">2021 – 2023</span>
+          <div class="timeline-title">
+            <span class="en">M.S. in Computer Science, Example University</span>
+            <span class="ja">例大学 情報科学専攻 修士課程 修了</span>
+          </div>
+          <div class="timeline-sub">
+            <span class="en">Thesis: Neural Approaches to Machine Translation</span>
+            <span class="ja">修士論文：機械翻訳へのニューラルアプローチ</span>
+          </div>
+        </li>
+        <li>
+          <span class="timeline-year">2017 – 2021</span>
+          <div class="timeline-title">
+            <span class="en">B.E. in Information Engineering, Sample University</span>
+            <span class="ja">サンプル大学 情報工学科 卒業</span>
+          </div>
+          <div class="timeline-sub">
+            <span class="en">Graduated with honors</span>
+            <span class="ja">優秀賞受賞</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ---- Internship ---- -->
+    <section id="internship">
+      <h2>
+        <span class="en">Internship</span>
+        <span class="ja">インターンシップ</span>
+      </h2>
+
+      <div class="internship-list">
+        <div class="internship-card">
+          <div class="internship-card-header">
+            <h3>
+              <span class="en">Example Tech Corp.</span>
+              <span class="ja">サンプルテック株式会社</span>
+            </h3>
+            <span class="internship-period">
+              <span class="en">Jul. 2023 – Sep. 2023</span>
+              <span class="ja">2023年7月 – 2023年9月</span>
+            </span>
+          </div>
+          <div class="internship-role">
+            <span class="en">Research Intern – NLP Team</span>
+            <span class="ja">リサーチインターン – NLPチーム</span>
+          </div>
+          <p class="internship-desc">
+            <span class="en">Developed a retrieval-augmented generation (RAG) pipeline and improved retrieval accuracy by 12% on internal benchmarks.</span>
+            <span class="ja">検索拡張生成（RAG）パイプラインの開発に従事し、社内ベンチマークで検索精度を12%改善した。</span>
+          </p>
+        </div>
+
+        <div class="internship-card">
+          <div class="internship-card-header">
+            <h3>
+              <span class="en">Demo Labs Inc.</span>
+              <span class="ja">デモラボス株式会社</span>
+            </h3>
+            <span class="internship-period">
+              <span class="en">Aug. 2022 – Sep. 2022</span>
+              <span class="ja">2022年8月 – 2022年9月</span>
+            </span>
+          </div>
+          <div class="internship-role">
+            <span class="en">Software Engineering Intern</span>
+            <span class="ja">ソフトウェアエンジニアリングインターン</span>
+          </div>
+          <p class="internship-desc">
+            <span class="en">Built a real-time document summarization API using transformer-based models, deployed on cloud infrastructure.</span>
+            <span class="ja">トランスフォーマーベースのモデルを使ったリアルタイム文書要約APIを構築し、クラウド基盤へデプロイした。</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Awards ---- -->
+    <section id="awards">
+      <h2>
+        <span class="en">Awards</span>
+        <span class="ja">受賞</span>
+      </h2>
+
+      <ul class="awards-list">
+        <li>
+          <span class="award-icon">🏆</span>
+          <div class="award-details">
+            <div class="award-title">
+              <span class="en">Best Paper Award – NLP Conference 2023</span>
+              <span class="ja">NLP Conference 2023 最優秀論文賞</span>
+            </div>
+            <div class="award-meta">
+              <span class="en">For the paper "Efficient Pretraining of Large Language Models"</span>
+              <span class="ja">論文「大規模言語モデルの効率的な事前学習」に対して</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="award-icon">🥇</span>
+          <div class="award-details">
+            <div class="award-title">
+              <span class="en">Dean's Award for Academic Excellence, Example University (2023)</span>
+              <span class="ja">例大学 学業優秀賞（2023年）</span>
+            </div>
+            <div class="award-meta">
+              <span class="en">Awarded to top 5% of graduate students</span>
+              <span class="ja">大学院生上位5%に贈られる賞</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="award-icon">🎖️</span>
+          <div class="award-details">
+            <div class="award-title">
+              <span class="en">Scholarship for Advanced Research, Japan Science Foundation (2022)</span>
+              <span class="ja">日本科学財団 先端研究奨学金（2022年）</span>
+            </div>
+            <div class="award-meta">
+              <span class="en">Competitive scholarship for doctoral students in science and engineering</span>
+              <span class="ja">理工系博士課程学生向け競争的奨学金</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <p>
+      <span class="en">&copy; 2024 Takuma Miwa. All rights reserved.</span>
+      <span class="ja">&copy; 2024 三輪 拓馬. All rights reserved.</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
