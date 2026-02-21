@@ -13,7 +13,16 @@
 <header>
   <div class="wrap topbar">
     <div class="brand">Takuma Miwa / 三輪 拓真</div>
-    <nav class="nav" aria-label="Primary">
+    <div class="header-right">
+      <div class="lang" aria-label="Language switch">
+        <button class="pill active" id="btn-ja" type="button">ja</button>
+        <button class="pill" id="btn-en" type="button">en</button>
+      </div>
+      <button class="hamburger" id="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav" id="main-nav" aria-label="Primary">
       <a href="#career" data-i18n="nav_career" class="active">経歴</a>
       <a href="#education" data-i18n="nav_education">学歴</a>
       <a href="#skills" data-i18n="nav_skills">技術スキル</a>
@@ -21,10 +30,6 @@
       <a href="#research" data-i18n="nav_research">研究</a>
       <a href="#awards" data-i18n="nav_awards">受賞</a>
     </nav>
-    <div class="lang" aria-label="Language switch">
-      <button class="pill active" id="btn-ja" type="button">ja</button>
-      <button class="pill" id="btn-en" type="button">en</button>
-    </div>
   </div>
 </header>
 
@@ -490,6 +495,25 @@
 
   btnJa.addEventListener('click', () => setLang('ja'));
   btnEn.addEventListener('click', () => setLang('en'));
+
+  // Hamburger menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mainNav = document.getElementById('main-nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Close menu when a nav link is tapped (mobile)
+  mainNav.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 
   // Highlight active nav on scroll
   const navLinks = Array.from(document.querySelectorAll('.nav a'));
